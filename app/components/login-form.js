@@ -5,14 +5,12 @@ export default Ember.Component.extend({
   actions: {
     login(){
       let {email, password} = this.getProperties('email', 'password');
-      console.log(email, password);
-      console.log(this.get("session"));
       this.get("session").login(email, password).then(()=>{
-        this.transitionToPreviousRoute();
+        this.transitionTo('index');
       }).catch((reason)=>{
         console.log("Error: " + reason);
       });
-      this.sendAction('login')
+      this.transitionTo('index');
     },
     transitionToPreviousRoute(){
       var previousTransition = this.get('previousTransition');
