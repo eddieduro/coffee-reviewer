@@ -1,0 +1,50 @@
+{
+  "users": [{
+    "name": "Eddie",
+    "email": "eddieduro@hotmail.com",
+    "password": "123",
+    "ratings": {
+      "0": true,
+      "1": true
+    }
+  },{
+    "name": "Admin",
+    "email": "admin@admin.com",
+    "password": "admin"
+  }],
+  "coffees": [{
+    "roaster": "Stumptown Coffee",
+    "blend": "Golden Hour",
+    "notes": "Blood Orange, Caramel & Licorice",
+    "price": "18",
+    "ratings": {
+      "0": true
+    }
+  },{
+    "roaster": "Stumptown Coffee",
+    "blend": "Hair Bender",
+    "notes": "Cherry, Toffee & Fudge",
+    "price": "15",
+    "ratings": {
+      "1": true,
+      "2": true
+    }
+  }],
+  "ratings": [{
+    "value": "5",
+    "user":{
+      "0": true
+    },
+    "coffee": {
+      "0": true
+    }
+  }, {
+    "value": "4",
+    "user":{
+      "0": true
+    },
+    "coffee": {
+      "1": true
+    }
+  }]
+}

@@ -5,5 +5,6 @@ export default DS.Model.extend({
   blend: DS.attr(),
   notes: DS.attr(),
   price: DS.attr(),
+  image: DS.attr(),
   ratings: DS.hasMany('ratings', {async: true})
 });
