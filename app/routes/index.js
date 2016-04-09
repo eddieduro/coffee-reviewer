@@ -8,7 +8,6 @@ export default Ember.Route.extend({
       coffee: this.store.findAll('coffee'),
       rating: this.store.findAll('rating')
     })
-
   },
   actions: {
 
